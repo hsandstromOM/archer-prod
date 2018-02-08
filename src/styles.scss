@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+.btn-danger {
+  background-color: #d00216!important;
+    border-color: #d00216!important;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .show > .btn-danger.dropdown-toggle {
+  background-color: #c82333!important;
+    border-color: #bd2130!important;
+    opacity: .7;
+}
+.title {
+  color:#000!important;
+}
+.page-header{
+  margin-top:128px;
+}
+.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 3rem
+}
+
+.masthead .masthead-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d00216;
+  transform: skewY(45deg);
+  transform-origin: bottom right;
+}
+
+.carousel-inner .carousel-item img {
+  height:100%!important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background-color: #d00216!important;
+}
+
+.carousel-indicators .active {
+  background-color: #d00216!important;
+
+}
+@media (min-width: 768px) {
+  // .navbar-expand-lg .navbar-toggler {
+  //   display: none!important;
+  // }
+}
+
+@media (max-width:991px) {
+  .model-2 {
+    // flex-direction: column!important;
+    display: block!important;
+  }
+  .masthead .masthead-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 2%;
+    height: 100%;
+    background-color: #d00216;
+    transform: skewY(0);
+    transform-origin: bottom right;
+  }
+}
