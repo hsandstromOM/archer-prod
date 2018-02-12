@@ -17,6 +17,12 @@ export class NavbarComponent implements OnInit {
     ngOnInit() {
         const navbar: HTMLElement = this.element.nativeElement;
         this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
+        window.scroll({
+          top: 2500,
+          left: 0,
+          behavior: 'smooth'
+        });
+
     }
     sidebarOpen() {
         const toggleButton = this.toggleButton;

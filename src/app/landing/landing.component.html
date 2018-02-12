@@ -1,152 +1,265 @@
-<div class="page-header" data-parallax="true" style="background-image: url('../assets/img/magnolia-one.jpg');">
-    <!-- <div class="filter"></div> -->
-    <div class="container">
-        <div class="motto text-center">
+<div class="page-header" data-parallax="true" style="background-image: url('../assets/img/magnolia-kitchen.jpg');">
+  <div class="container">
+    <div class="motto">
+      <div class="row">
+        <div class="col-md-12 mr-auto ml-auto">
+          <h5 class="title text-white">Featured Project:</h5>
+          <h3 class="title text-white">Downtown New Contstruction | Caropolis Award Winner</h3>
+          <h5 class="title text-white"><button class="btn-square" (click)="open(content)">View</button>
+</h5>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 <div class="main">
-    <div class="section masthead text-center">
-      <div class="masthead-bg"></div>
+  <div class="section masthead text-center">
+    <div class="masthead-bg"></div>
     <div class="container">
-        <div class="row">
-            <div class="col-md-8 mr-auto ml-auto">
-                <h2 class="title">Craftmanship</h2>
-                <h5 class="title">Ranging from new contstruction to renovations
+      <div class="row">
+        <div class="col-md-8 mr-auto ml-auto">
+          <h2 class="title">Craftmanship</h2>
+          <h5 class="title">Ranging from new contstruction to renovations
                 it is important to us to provide our homeowners with the highest level
               of customer service and quality craftmanship. </h5>
-                <!-- <br> -->
-                <!-- <a href="#paper-kit" class="btn btn-danger btn-round">See Details</a> -->
-            </div>
         </div>
-        <!-- <br/><br/> -->
-        <!-- <div class="row">
-            <div class="col-md-3">
-                <div class="info">
-                    <div class="icon icon-danger">
-                        <i class="nc-icon nc-album-2"></i>
-                    </div>
-                    <div class="description">
-                        <h4 class="info-title">Beautiful Gallery</h4>
-                        <p class="description">Spend your time generating new ideas. You don't have to think of implementing.</p>
-                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="info">
-                    <div class="icon icon-danger">
-                        <i class="nc-icon nc-bulb-63"></i>
-                    </div>
-                    <div class="description">
-                        <h4 class="info-title">New Ideas</h4>
-                        <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient.</p>
-                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="info">
-                    <div class="icon icon-danger">
-                        <i class="nc-icon nc-chart-bar-32"></i>
-                    </div>
-                    <div class="description">
-                        <h4 class="info-title">Statistics</h4>
-                        <p>Choose from a veriety of many colors resembling sugar paper pastels.</p>
-                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="info">
-                    <div class="icon icon-danger">
-                        <i class="nc-icon nc-sun-fog-29"></i>
-                    </div>
-                    <div class="description">
-                        <h4 class="info-title">Delightful design</h4>
-                        <p>Find unique and handmade delightful designs related items directly from our sellers.</p>
-                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- <button class="btn btn-outline-danger btn-round" (click)="open()">Launch demo modal</button> -->
-    </div>
-</div>
-
-<div class="section section-dark text-center">
-    <div class="container">
-        <!-- <h2 class="title"></h2> -->
-        <div class="row">
-            <div class="" id="carousel">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 mr-auto ml-auto">
-                            <div class="card page-carousel">
-                                <ngb-carousel>
-                                    <ng-template ngbSlide>
-                                        <img src="../assets/img/soroush-karimi.jpg" alt="Random first slide">
-                                        <div class="carousel-caption">
-                                            <p>Somewhere</p>
-                                        </div>
-                                    </ng-template>
-                                    <ng-template ngbSlide>
-                                        <img src="../assets/img/federico-beccari.jpg" alt="Random second slide">
-                                        <div class="carousel-caption">
-                                            <p>Somewhere else</p>
-                                        </div>
-                                    </ng-template>
-                                    <ng-template ngbSlide>
-                                        <img src="../assets/img/joshua-stannard.jpg" alt="Random third slide">
-                                        <div class="carousel-caption">
-                                            <p>Here it is</p>
-                                        </div>
-                                    </ng-template>
-                                </ngb-carousel>
-                            </div>
+      </div>
+      <ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-header desktop">
+          <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+        </div>
+        <div class="modal-body">
+          <!-- <button type="button" class="close mobile" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button> -->
+                  <div class="card page-carousel">
+                    <ngb-carousel>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8003-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
                         </div>
-                    </div>
-                </div>
-            </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8011-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8013-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8017-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8028-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8029-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8032-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8041-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8046-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8057-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8046-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8063-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8066-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8068-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8075-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8078-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8081-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8085-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8088-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="../assets/img/magnolia/DSC_8090-min.jpg" alt="Magnolia Project">
+                        <div class="carousel-caption">
+                          <p></p>
+                        </div>
+                      </ng-template>
+                    </ngb-carousel>
+                  </div>
         </div>
+      </ng-template>
     </div>
+    <div id="commercial"></div>
+    <div id="residential"></div>
+  </div>
+  <div class="section section-light">
+    <div class="container">
+      <div class="row">
+        <div class="mobile-hide">
+        <ngb-tabset [justify]="currentJustify">
+  <ngb-tab>
+    <ng-template ngbTabTitle><h3>Commercial</h3></ng-template>
+    <ng-template ngbTabContent>
+      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+      master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh
+      dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum
+      iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab>
+    <ng-template ngbTabTitle><h3>Residential</h3></ng-template>
+    <ng-template ngbTabContent>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+      <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+      craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl
+      cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia
+      yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean
+      shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero
+      sint qui sapiente accusamus tattooed echo park.</p>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>
 </div>
-    <div class="section landing-section">
-        <div class="container">
+<div class="desktop-hide w-100">
+<ngb-accordion [closeOthers]="true" activeIds="static-1">
+  <ngb-panel id="static-1">
+    <ng-template ngbPanelTitle>
+      <h3>Commercial</h3>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="static-2">
+    <ng-template ngbPanelTitle>
+      <h3>Residential</h3>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="section landing-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mr-auto ml-auto">
+          <h2 class="text-center">Get in touch</h2>
+          <form class="contact-form">
             <div class="row">
-                <div class="col-md-8 mr-auto ml-auto">
-                    <h2 class="text-center">Keep in touch?</h2>
-                    <form class="contact-form">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Name</label>
-                                <div class="input-group">
-                                    <span class="input-group-addon">
+              <div class="col-md-6">
+                <label>Name</label>
+                <div class="input-group">
+                  <span class="input-group-addon">
                                         <i class="nc-icon nc-single-02"></i>
                                     </span>
-                                    <input type="text" class="form-control" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <label>Email</label>
-                                <div class="input-group">
-                                    <span class="input-group-addon">
+                  <input type="text" class="form-control" placeholder="Name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label>Email</label>
+                <div class="input-group">
+                  <span class="input-group-addon">
                                         <i class="nc-icon nc-email-85"></i>
                                     </span>
-                                    <input type="text" class="form-control" placeholder="Email">
-                                </div>
-                            </div>
-                        </div>
-                        <label>Message</label>
-                        <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
-                        <div class="row">
-                            <div class="col-md-4 mr-auto ml-auto">
-                                <button class="btn btn-danger btn-lg btn-fill">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
+                  <input type="text" class="form-control" placeholder="Email">
                 </div>
+              </div>
             </div>
+            <label>Message</label>
+            <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
+            <div class="row">
+              <div class="col-md-4 mr-auto ml-auto">
+                <button class="btn btn-danger btn-lg btn-fill">Send Message</button>
+              </div>
+            </div>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
 </div>

@@ -371,13 +371,13 @@
     .dropdown-notification-list{
         & li{
             border-bottom: 1px solid #F1EAE0;
-            color: #66615b;
+            color: #d00216;
             font-size: 16px;
             padding: 10px 5px;
             width: 330px;
 
             & a{
-                color: #66615b;
+                color: #d00216;
                 white-space: normal;
 
                 & .notification-text{
@@ -413,7 +413,7 @@
             }
             &:hover{
                 background-color: #F0EFEB;
-                color: #66615b;
+                color: #d00216;
                 opacity: 1;
                 text-decoration: none;
 
