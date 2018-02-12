@@ -7,15 +7,20 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { LandingComponent } from './landing/landing.component';
+import { CommercialComponent } from './commercial/commercial.component';
+import { ResidentialComponent } from './residential/residential.component';
+
+
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 
 const routes: Routes =[
     { path: '',             component: LandingComponent },
-    { path: 'user-profile',     component: ProfileComponent },
+    { path: 'commercial',     component: CommercialComponent },
+    { path: 'residential',     component: ResidentialComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
-    // { path: '', redirectTo: 'home', pathMatch: 'full' }
+    // { path: '', redirectTo: 'landing', pathMatch: 'full' }
 ];
 
 @NgModule({

@@ -17,6 +17,10 @@ button:focus {
   outline: none!important;
 }
 
+.section {
+  padding: 35px 0 !important;
+}
+
 .nav-tabs .nav-item {
   margin: 0 2rem -1px;
 }
@@ -233,6 +237,11 @@ button.close {
   .masthead .masthead-bg {
     transform: skewY(50deg);
   }
+}
+@media (max-width:992px) {
+.model-2 {
+  display: block!important;
+}
 }
 @media (max-width:768px) {
   .card {
