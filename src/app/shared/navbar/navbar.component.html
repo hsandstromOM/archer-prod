@@ -1,66 +1,52 @@
 <nav class="navbar navbar-expand-lg fixed-top" color-on-scroll="500">
-    <div class="container">
-        <div class="navbar-translate">
-            <a class="navbar-brand" href="">
+  <div class="container">
+    <div class="navbar-translate">
+      <a class="navbar-brand" href="">
               <img src="assets/img/NEW-ArcherLogo.png" alt="Archer Logo">
-              <!-- <i class="fa fa-chevron-up"></i><span>AC</span> -->
             </a>
-            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+      <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
             </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarToggler">
-            <ul class="navbar-nav ml-auto text-center">
-                <div class="social-icons  model-2">
-        <ul class="list-unstyled text-center mb-0 model-2">
+    </div>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <div class="social-icons  model-2">
+        <ul class="list-unstyled text-center mb-0 model-2 navbar-nav ml-auto text-center">
           <li class="list-unstyled-item nav-item">
             <a class="pinterest" rel="tooltip" title="Check out commercial projects" href="commercial">
               <i class="fa fa-building"></i>
             </a>
-            <p class="d-lg-none">Commercial</p>
+            <a class="a-text" href="commercial">
+              <p class="">Commercial</p>
+            </a>
           </li>
           <li class="list-unstyled-item nav-item">
             <a class="pinterest" rel="tooltip" title="Check out residential projects" href="residential">
               <i class="fa fa-home"></i>
             </a>
-            <p class="d-lg-none">Residential</p>
+            <a class="a-text" href="residential">
+              <p class="">Residential</p>
+            </a>
           </li>
           <li class="list-unstyled-item nav-item">
             <a class="pinterest" rel="tooltip" title="Check out projects on Houzz" data-placement="bottom" href="https://www.houzz.com/pro/archerdevelopmentgroup/archer-construction">
               <i class="fa fa-houzz"></i>
             </a>
-            <p class="d-lg-none">Houzz</p>
+            <a class="a-text" href="https://www.houzz.com/pro/archerdevelopmentgroup/archer-construction">
+              <p class="">Houzz</p>
+            </a>
           </li>
           <li class="list-unstyled-item nav-item">
             <a class="pinterest" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/Archer-Construction-193688200702629/">
               <i class="fa fa-facebook"></i>
             </a>
-              <p class="d-lg-none">Facebook</p>
+            <a class="a-text" href="https://www.facebook.com/Archer-Construction-193688200702629/">
+              <p class="">Facebook</p>
+            </a>
           </li>
         </ul>
       </div>
-                <!-- <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="https://www.github.com/CreativeTimOfficial/pk2-angular" target="_blank">
-                        <i class="fa fa-github"></i>
-                        <p class="d-lg-none">GitHub</p>
-                    </a>
-                </li> -->
-                <!-- <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a href="http://pk2-angular.creative-tim.com/documentation/tutorial" class="nav-link" target="_blank"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
-                </li> -->
-                <!-- <li class="nav-item" *ngIf="isHome()">
-                    <a href="https://www.creative-tim.com/product/paper-kit-2-pro?ref=pk2-free-local" target="_blank" class="btn btn-danger btn-round disabled">Upgrade to Pro</a>
-                </li> -->
-                <!-- <li class="nav-item" *ngIf="!isHome()">
-                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link"><i class="nc-icon nc-layout-11"></i>Components</a>
-                    <a [routerLink]="['/home']" *ngIf="isDocumentation()" class="nav-link">Back to Kit</a>
-                </li> -->
-                <!-- <li class="nav-item" *ngIf="isDocumentation()">
-                    <a href="https://github.com/creativetimofficial/pk-free-angular/issues?ref=pk2-free-local" target="_blank" class="nav-link">Have an issue</a>
-                </li> -->
-            </ul>
-        </div>
     </div>
+  </div>
 </nav>

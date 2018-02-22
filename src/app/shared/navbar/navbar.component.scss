@@ -1,34 +1,48 @@
 .fa-chevron-up {
-  color:#dc3545;
+  color: #dc3545;
 }
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end!important;
+  }
+}
+
 .navbar .nav-link p {
-  color:#d00216!important;
+  color: #d00216!important;
 }
+
 .navbar.navbar-transparent {
   padding-top: 0;
 }
-.navbar-transparent .navbar-brand, [class*="bg"] .navbar-brand {
-  opacity:1;
+
+.navbar-transparent .navbar-brand,
+[class*="bg"] .navbar-brand {
+  opacity: 1;
 }
 
 .navbar-brand img {
-  max-width: 30%;
+  max-width: 50%;
 }
+
 .model-2 {
   display: flex;
 }
-.model-2 ul>li {
+
+.model-2 ul > li {
   display: flex;
   align-items: center;
 }
+
 .model-2 p {
-  color:#d00216 !important;
+  color: #d00216 !important;
   margin-bottom: -1px;
 }
-.model-2 ul>li>a {
+
+.model-2 ul > li > a {
   margin: 1rem;
 }
-.model-2 ul>li>a {
+
+.model-2 ul > li > a {
   display: block;
   color: white;
   background-color: #d00216;
@@ -36,8 +50,25 @@
   font-size: 1.2rem;
   line-height: 2rem;
   height: 2.2rem;
-  width: 2.2rem
+  width: 2.2rem;
 }
+
+.model-2 ul > li > a.a-text {
+  display: block;
+  border-radius: 0;
+  background-color: transparent;
+  width: 20%;
+  height: auto;
+  margin-left: -.5rem;
+  overflow: visible;
+}
+
+.model-2 ul > li > a.a-text:hover p {
+  opacity: 0.7;
+  color: #000!important;
+  text-shadow: none;
+}
+
 .model-2 a {
   overflow: hidden;
   font-size: 26px;
@@ -46,24 +77,17 @@
   border-radius: 4px;
   margin: 0 5px;
 }
+
 .model-2 a:hover {
   background: #fff;
-  text-shadow: 0px 0px #000, 1px 1px #000, 2px 2px #d00216, 3px 3px #d00216,
-  4px 4px #d00216, 5px 5px #d00216, 6px 6px #d00216, 7px 7px #d00216, 8px 8px #d00216,
-  9px 9px #d00216, 10px 10px #d00216, 11px 11px #d00216, 12px 12px #d00216, 13px 13px #d00216, 14px 14px #d00216, 15px 15px #d00216,
-  16px 16px #d00216, 17px 17px #d00216, 18px 18px #d00216, 19px 19px #d00216, 20px 20px #d00216, 21px 21px #d00216, 22px 22px #d00216,
-  23px 23px #d00216, 24px 24px #d00216, 25px 25px #d00216, 26px 26px #d00216, 27px 27px #d00216, 28px 28px #d00216, 29px 29px #d00216,
-  30px 30px #d00216;
+  text-shadow: 0 0 #000, 1px 1px #000, 2px 2px #d00216, 3px 3px #d00216, 4px 4px #d00216, 5px 5px #d00216, 6px 6px #d00216, 7px 7px #d00216, 8px 8px #d00216, 9px 9px #d00216, 10px 10px #d00216, 11px 11px #d00216, 12px 12px #d00216, 13px 13px #d00216, 14px 14px #d00216, 15px 15px #d00216, 16px 16px #d00216, 17px 17px #d00216, 18px 18px #d00216, 19px 19px #d00216, 20px 20px #d00216, 21px 21px #d00216, 22px 22px #d00216, 23px 23px #d00216, 24px 24px #d00216, 25px 25px #d00216, 26px 26px #d00216, 27px 27px #d00216, 28px 28px #d00216, 29px 29px #d00216, 30px 30px #d00216;
 }
+
 .model-2 .pinterest {
   background: #CB2026;
-  text-shadow: 0px 0px #9f191e, 1px 1px #9f191e, 2px 2px #9f191e, 3px 3px #9f191e, 4px 4px #9f191e, 5px 5px #9f191e,
-  6px 6px #9f191e, 7px 7px #9f191e, 8px 8px #9f191e, 9px 9px #9f191e, 10px 10px #9f191e,
-  11px 11px #9f191e, 12px 12px #9f191e, 13px 13px #9f191e, 14px 14px #9f191e, 15px 15px #9f191e, 16px 16px #9f191e,
-  17px 17px #9f191e, 18px 18px #9f191e, 19px 19px #9f191e, 20px 20px #9f191e, 21px 21px #9f191e, 22px 22px #9f191e,
-  23px 23px #9f191e, 24px 24px #9f191e,
-  25px 25px #9f191e, 26px 26px #9f191e, 27px 27px #9f191e, 28px 28px #9f191e, 29px 29px #9f191e, 30px 30px #9f191e;
+  text-shadow: 0 0 #9f191e, 1px 1px #9f191e, 2px 2px #9f191e, 3px 3px #9f191e, 4px 4px #9f191e, 5px 5px #9f191e, 6px 6px #9f191e, 7px 7px #9f191e, 8px 8px #9f191e, 9px 9px #9f191e, 10px 10px #9f191e, 11px 11px #9f191e, 12px 12px #9f191e, 13px 13px #9f191e, 14px 14px #9f191e, 15px 15px #9f191e, 16px 16px #9f191e, 17px 17px #9f191e, 18px 18px #9f191e, 19px 19px #9f191e, 20px 20px #9f191e, 21px 21px #9f191e, 22px 22px #9f191e, 23px 23px #9f191e, 24px 24px #9f191e, 25px 25px #9f191e, 26px 26px #9f191e, 27px 27px #9f191e, 28px 28px #9f191e, 29px 29px #9f191e, 30px 30px #9f191e;
 }
+
 .model-2 .pinterest:hover {
   color: #CB2026;
 }

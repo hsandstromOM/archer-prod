@@ -119,9 +119,9 @@ button:focus {
 }
 
 .carousel-inner .carousel-item img {
-  min-height: 300px!important;
+  // min-height: 300px!important;
   height:auto;
-  object-fit: cover;
+  object-fit: contain;
   width:100%;
 }
 .carousel-indicators li {
@@ -145,6 +145,12 @@ button.close {
 }
 .carousel-inner .carousel-item img {
   border-radius: 0!important;
+  box-shadow: none!important;
+  height: auto!important;
+  max-height: 600px!important;
+}
+.card {
+  box-shadow: none!important;
 }
 
 .masthead {
@@ -175,10 +181,6 @@ button.close {
 .card-header a:hover,
 .card-header.active h3 {
   color: #CB2026!important;
-}
-
-.carousel-inner .carousel-item img {
-  height: 100%!important;
 }
 
 .carousel-control-next,
@@ -219,6 +221,9 @@ button.close {
   }
 }
 @media (max-width:1040px) {
+  .carousel-control-prev, .carousel-control-next {
+    opacity:1!important;
+  }
   .modal-dialog {
     padding-top: 90px!important;
   }
