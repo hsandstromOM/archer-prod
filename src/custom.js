@@ -1,37 +1,35 @@
 $(document).ready(function() {
-  $('.responsive').slick({
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
+  $('#someForm').on('submit', function(e) {
+      e.preventDefault();
+
+      //get the name field value
+      var name = $('#name').val();
+      //get the name field value
+      var email = $('#email').val();
+      //get the comments
+      var comments = $('#comments').val();
+
+      //pretend we don't need validation
+
+      //send to formspree
+      $.ajax({
+          url:'https://formspree.io/hoseasandstrom@gmail.com',
+          method:'POST',
+          data:{
+              name:name,
+              _replyto:email,
+               email:email,
+              comments:comments,
+              _subject:'My Form Submission',
+          },
+          dataType:"json",
+          success:function() {
+              console.log('success');
+              $('#formBlock').hide();
+              $('#thankyouBlock').show();
+          }
+
+      });
+
   });
 });
