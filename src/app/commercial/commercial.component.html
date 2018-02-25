@@ -9,17 +9,256 @@
     </div>
   </div>
 </div>
-<div class="">
 <div class="projects">
-   <div class="item">
+   <div class="item item-1">
      <div class="item-info">
-       <h2>Project Title</h2>
+       <!-- <h2>Project Title</h2> -->
        <h5 class="title text-white"><button class="btn-square" (click)="open(content)">View</button></h5>
      </div>
    </div>
- </div>
-</div>
-<!-- <h5 class="title text-white"><button class="btn-square" (click)="open(content)">View</button></h5> -->
+    <div class="item item-2">
+      <div class="item-info">
+        <!-- <h2>Project Title</h2> -->
+        <h5 class="title text-white"><button class="btn-square" (click)="open(content2)">View</button></h5>
+      </div>
+    </div>
+     <div class="item item-3">
+       <div class="item-info">
+         <!-- <h2>Project Title</h2> -->
+         <h5 class="title text-white"><button class="btn-square" (click)="open(content3)">View</button></h5>
+       </div>
+     </div>
+     <div class="item item-4">
+       <div class="item-info">
+         <!-- <h2>Project Title</h2> -->
+         <h5 class="title text-white"><button class="btn-square" (click)="open(content4)">View</button></h5>
+       </div>
+     </div>
+   </div>
+   <ng-template #content4 let-c="close" let-d="dismiss">
+     <div class="modal-header desktop">
+       <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+   <span aria-hidden="true">&times;</span>
+   </button>
+     </div>
+     <div class="modal-body">
+               <div class="card page-carousel">
+                 <ngb-carousel>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/30311tCM1y64KOgmYeQoKO/7812b61259d6df6c41bfcee62ffd2dc1/IMG_8321.jpg?w=640&h=480&fit=thumb" alt="Parrothead Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/3UJm0cwWgoUSQ2SmGigIoo/784c7d8dcdb6048d220ce767c6487b1f/IMG_0698.jpg?w=640&h=480&fit=thumb" alt="Parrothead Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/3i4Q4lPJKwy0QyWGMWmS68/c8785b4f2041bacbb1dc24d2f553e462/IMG_8299.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/43mRVb7ZPiKCOQuWcO4CeI/e0d9d1d37216d23c6e858b54102abeee/IMG_0681.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/4VpBoadpxK8K44EKyaWOII/aaf5408a3c1a2a152fac7ab51c4f9853/IMG_8314.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/5IURuIjZaoMqayKyiEY0M6/66c3bf11c875bd61ad6a3e2a013347ad/IMG_8341.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/5nRb5DgowwsmMUE2qc0Q0c/90d71de09081af34bbd7ffffc90b573d/IMG_8316.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/5pBj3G9wjYkUcIamsGO0qw/20e97bd240c9b5742dfd2f30da5b0fb4/IMG_0675.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/6Y9cGjSuwogGS8gkY0a0WC/cad879870ebd064813fa755e033477bb/IMG_0678.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/6ZPmrouSLm8qwm0YsIwicg/876031516102c452efded64c4f44a13e/IMG_8331.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/6ZhJBZXVRYISc2MK2UQOgy/583f5d301f13ff678667da0b6cf47c61/IMG_0696.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/7fNwgDQ61qWqqAqWgSKE68/22aa7208ef6802f7b8fce6fad46aead1/parrot-3.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/fR9LUV0ity4uOGW2mCaeE/9acfb11f3a68961c1788b3bb62c28077/IMG_8325.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                 </ngb-carousel>
+               </div>
+     </div>
+   </ng-template>
+   <ng-template #content3 let-c="close" let-d="dismiss">
+     <div class="modal-header desktop">
+       <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+   <span aria-hidden="true">&times;</span>
+   </button>
+     </div>
+     <div class="modal-body">
+               <div class="card page-carousel">
+                 <ngb-carousel>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/6lTSCYS32ouIW2qYUqwmWQ/0fa0c6ebc4632d85c3e5a172c79477c9/DSC_3932.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/lJwn068lcyMiaUuKWOqYO/3618218cee2da898510285603cfcc4be/DSC_3933.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/2O6k1Raj5Y6wGoImgUIsaW/fe902be3db2bc6736c9fa371697cd928/DSC_3938.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/4DfqMybatOiIca84qgySi4/e3a74fa0cc237d321749b77132c443f4/DSC_3943.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/67LNczQY0MuQouGS0sgECy/fda9b4afc5c69c7079da37235f15df2c/DSC_3945.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/29gbCyoaTuKu2geMU6aikc/ce6c77e2084b172e7fa85da3ad726454/DSC_3949.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/4yW15ZqEhWEWsoiiMK0SGq/ae33de2d95697bbc200ef8810f0bc5c1/DSC_3950.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/1auZzQpyI8wOaYGWWQMaK8/f1e226cc37a70cd758192632efa08af0/DSC_3940.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/5MvI237XpYykEwMq2Oc2S0/1414a413604c12c33f5032a000a6d8fe/DSC_3955.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/4luCsKElTaA44cA4iAg26Q/b02edc84f189e600aeeccaf169b2c533/DSC_3951.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/6dSA0s47rGCw0MS4Wsg4ci/e5257f501b93eac61385c617f2142159/DSC_3957.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/19m7e7nIcsmsGAwEeOm26Q/76b754cb3320081949ef74cbd29af2a6/DSC_3956.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/1yq8qEP356uWYauowgkUI8/35a5fddeb1e5d45205874f8afd3f467f/DSC_3946.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/4Wdiga36kwEWmoYAyoeC82/a0ae18aa5e2c9963c4b98049030cc338/DSC_3947.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/4Jocg0BM0Mc0Y2GWa46g0S/28115260413a3ea7a67ecff26843f552/DSC_3961.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/1Gpq93gZluOMsoIuSOEcCk/efe59b32e6618debd048d634c4183854/DSC_3952.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/280REsNuZSmckS24E48QCq/7e11cdde8295161e17fc2434bb47fc04/DSC_3970.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/6sCZDaEDuwWW4qWqeSWQiu/c57a2692bb9b4a073d1e254ef364acc5/DSC_3964.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/1ruQmFsLWgcuuQiieoUkuC/3c2941c25beaf6b294c62e65b70222cb/DSC_3969.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                   <ng-template ngbSlide>
+                     <img class="img-fluid" src="//images.contentful.com/uci55v1bf2f0/jO7NGDf2zCiMa8KIaesOq/8d2ac7e6f76bc7fcf90029775c5ddb00/DSC_3944.jpg?w=640&h=480&fit=thumb" alt="Thrasher Project">
+                     <div class="carousel-caption">
+                       <p></p>
+                     </div>
+                   </ng-template>
+                 </ngb-carousel>
+               </div>
+     </div>
+   </ng-template>
 <ng-template #content let-c="close" let-d="dismiss">
   <div class="modal-header desktop">
     <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
@@ -30,7 +269,7 @@
             <div class="card page-carousel">
               <ngb-carousel>
                 <ng-template ngbSlide>
-                  <img class="img-fluid" src="../assets/img/magnolia/DSC_8003-min.jpg" alt="Magnolia Project">
+                  <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/mJ8l9i8pNYkqeW4yS0cio/4caf6db342d0a75aa2bf9cabec0226b4/DSC_8022.jpg" alt="Magnolia Project">
                   <div class="carousel-caption">
                     <p></p>
                   </div>
@@ -145,6 +384,49 @@
                 </ng-template>
                 <ng-template ngbSlide>
                   <img class="img-fluid" src="../assets/img/magnolia/DSC_8090-min.jpg" alt="Magnolia Project">
+                  <div class="carousel-caption">
+                    <p></p>
+                  </div>
+                </ng-template>
+              </ngb-carousel>
+            </div>
+  </div>
+</ng-template>
+<ng-template #content2 let-c="close" let-d="dismiss">
+  <div class="modal-header desktop">
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+<span aria-hidden="true">&times;</span>
+</button>
+  </div>
+  <div class="modal-body">
+            <div class="card page-carousel">
+              <ngb-carousel>
+                <ng-template ngbSlide>
+                  <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/219NA9a1mkmiGAAWC8MgWY/772642f37e55710ca2dfd52ee55bd9d4/DSC_8180.jpg" alt="East Arctic Project">
+                  <div class="carousel-caption">
+                    <p></p>
+                  </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                  <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/1cZbW7bi3kqeomG2AqSSYG/199aac170c94b554f25a73a237d49f98/DJI00227.jpg" alt="East Arctic Project">
+                  <div class="carousel-caption">
+                    <p></p>
+                  </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                  <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/1q0xpFZl4YsckYQYs6kiam/74d6797bf72920ba893f7b2b8674807a/DJI00222.jpg" alt="East Arctic Project">
+                  <div class="carousel-caption">
+                    <p></p>
+                  </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                  <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/3qZ9J9Yj2oqmcUay4cSqKQ/faa8ac3047c9e1d46fcd57aa21068a79/DJI00224.jpg" alt="East Arctic Project">
+                  <div class="carousel-caption">
+                    <p></p>
+                  </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                  <img class="img-fluid" src="https://images.contentful.com/uci55v1bf2f0/3qZ9J9Yj2oqmcUay4cSqKQ/faa8ac3047c9e1d46fcd57aa21068a79/DJI00224.jpg" alt="East Arctic Project">
                   <div class="carousel-caption">
                     <p></p>
                   </div>

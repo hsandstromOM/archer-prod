@@ -17,6 +17,9 @@ import { HomeModule } from './home/home.module';
 import { CommercialComponent } from './commercial/commercial.component';
 import { ResidentialComponent } from './residential/residential.component';
 
+import { ContentfulService } from './contentful.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +39,7 @@ import { ResidentialComponent } from './residential/residential.component';
     AppRoutingModule,
     HomeModule
   ],
-  providers: [],
+  providers: [ContentfulService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

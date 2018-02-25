@@ -10,6 +10,8 @@ import { LandingComponent } from './landing/landing.component';
 import { CommercialComponent } from './commercial/commercial.component';
 import { ResidentialComponent } from './residential/residential.component';
 
+import { ContentfulService } from './contentful.service';
+
 
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 
