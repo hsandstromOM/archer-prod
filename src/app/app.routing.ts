@@ -15,7 +15,7 @@ import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.compo
 
 const routes: Routes =[
     { path: '',             component: LandingComponent },
-    { path: 'commercial',     component: CommercialComponent },
+    { path: 'portfolio',     component: CommercialComponent },
     { path: 'residential',     component: ResidentialComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },
