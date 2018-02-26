@@ -1,35 +1,27 @@
 $(document).ready(function() {
-  $('#someForm').on('submit', function(e) {
-      e.preventDefault();
+  $('#contact-form').submit(function(e) {
+      var name = $('#inputName')
+      var email = $('#inputEmail')
+      var message = $('#inputMessage')
 
-      //get the name field value
-      var name = $('#name').val();
-      //get the name field value
-      var email = $('#email').val();
-      //get the comments
-      var comments = $('#comments').val();
+      if(name.val() == "" || email.val() == "" || message.val() == "") {
+        $('.submit-fail').fadeToggle(400);
+        return false;
+      }
+      else {
+        $.ajax({
+          method: 'POST',
+          url: '//formspree.io/info@archerconstructionsc.com',
+          data: $('#contact-form').serialize(),
+          datatype: 'json'
+        });
+        e.preventDefault();
+        $(this).get(0).reset();
+        $('.submit-success').fadeToggle(400);
+      }
+    });
 
-      //pretend we don't need validation
-
-      //send to formspree
-      $.ajax({
-          url:'https://formspree.io/hoseasandstrom@gmail.com',
-          method:'POST',
-          data:{
-              name:name,
-              _replyto:email,
-               email:email,
-              comments:comments,
-              _subject:'My Form Submission',
-          },
-          dataType:"json",
-          success:function() {
-              console.log('success');
-              $('#formBlock').hide();
-              $('#thankyouBlock').show();
-          }
-
-      });
-
-  });
+  $('.submit-fail, .submit-success').click(function() {
+    $(this).hide();
+  })
 });
